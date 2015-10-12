@@ -154,7 +154,7 @@ namespace basic_mat
                         {
                             for(size_t k = 0; k < N; k++)
                             {
-                                toReturn[r, c] += lhs(r, k) * (*this)(k, r);
+                                toReturn(r, c) += lhs(r, k) * (*this)(k, r);
                             }
                         }
                     }
